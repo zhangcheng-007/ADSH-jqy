@@ -102,8 +102,8 @@ def _dataset():
         labels = [x.strip() for x in fp]
         fp.close()
         return torch.LongTensor(list(map(int, labels)))
-    testlabels = load_label('test_label.txt', 'data/CIFAR-10')
-    databaselabels = load_label('database_label.txt', 'data/CIFAR-10')
+    testlabels = load_label('test_label.txt', '/content/ADSH-jqy/ADSH_pytorch/data/CIFAR-10')
+    databaselabels = load_label('database_label.txt', '/content/ADSH-jqy/ADSH_pytorch/data/CIFAR-10')
 
     testlabels = encoding_onehot(testlabels)
     databaselabels = encoding_onehot(databaselabels)
