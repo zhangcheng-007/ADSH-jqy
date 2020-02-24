@@ -91,9 +91,9 @@ def _dataset():
     ])
 
     dset_database = dp.DatasetProcessingCIFAR_10(
-        'data/CIFAR-10', 'database_img.txt', 'database_label.txt', transformations)
+        '/content/ADSH-jqy/ADSH_pytorch/data/CIFAR-10', 'database_img.txt', 'database_label.txt', transformations)
     dset_test = dp.DatasetProcessingCIFAR_10(
-        'data/CIFAR-10', 'test_img.txt', 'test_label.txt', transformations)
+        '/content/ADSH-jqy/ADSH_pytorch/data/CIFAR-10', 'test_img.txt', 'test_label.txt', transformations)
     num_database, num_test = len(dset_database), len(dset_test)
 
     def load_label(filename, DATA_DIR):
