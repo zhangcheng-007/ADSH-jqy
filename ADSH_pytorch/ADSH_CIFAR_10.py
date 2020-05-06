@@ -146,7 +146,7 @@ def adjusting_learning_rate(optimizer, iter):
             param_group['lr'] = param_group['lr'] / 10
 
 def adsh_algo(code_length):
- #   os.environ['CUDA_VISIBLE_DEVICES'] = opt.gpu
+    os.environ['CUDA_VISIBLE_DEVICES'] = opt.gpu
     torch.manual_seed(0)
     torch.cuda.manual_seed(0)
 
