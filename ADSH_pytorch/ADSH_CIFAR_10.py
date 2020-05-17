@@ -22,7 +22,7 @@ import utils.calc_hr as calc_hr
 parser = argparse.ArgumentParser(description="ADSH demo")
 parser.add_argument('--bits', default='12,24,32,48', type=str,
                     help='binary code length (default: 12,24,32,48)')
-parser.add_argument('--gpu', default='3', type=str,
+parser.add_argument('--gpu', default='0', type=str,
                     help='selected gpu (default: 1)')
 parser.add_argument('--arch', default='resnet50', type=str,
                     help='model name (default: resnet50)')
