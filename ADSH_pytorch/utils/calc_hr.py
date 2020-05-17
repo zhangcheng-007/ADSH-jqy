@@ -19,6 +19,7 @@ def calc_map(qB, rB, queryL, retrievalL):
         tsum = np.sum(gnd)
         if tsum == 0:
             continue
+        tsum =int(tsum)
         hamm = calc_hammingDist(qB[iter, :], rB)
         ind = np.argsort(hamm)
         gnd = gnd[ind]
@@ -51,6 +52,7 @@ def calc_topMap(qB, rB, queryL, retrievalL, topk):
         tsum = np.sum(tgnd)
         if tsum == 0:
             continue
+        tsum = int(tsum)
         count = np.linspace(1, tsum, tsum)
 
         tindex = np.asarray(np.where(tgnd == 1)) + 1.0
